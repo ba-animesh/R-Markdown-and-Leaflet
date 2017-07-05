@@ -1,0 +1,25 @@
+---
+title: "Developing Data Products Project 1"
+author: "Animesh Ranjan"
+date: "July 5, 2017"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## R Markdown
+
+```{r}
+library(leaflet)
+```
+
+
+
+```{r}
+my_map <- leaflet() %>%
+  addTiles() %>%
+  addMarkers(lat=25.6358, lng= 85.1117, popup="My Birth Place(Kurji, Patna, Bihar)")
+my_map
+```
